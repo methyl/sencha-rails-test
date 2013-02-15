@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sencha</title>
+  <%= stylesheet_link_tag    "desktop/application", media: "all" %>
+  <%= javascript_include_tag "desktop/application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<p>
+  <%= link_to "Mobile version", root_path(mobile: true) %>
+</p>
+<%= yield %>
+
+</body>
+</html>

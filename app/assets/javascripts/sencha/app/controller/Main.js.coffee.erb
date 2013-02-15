@@ -1,0 +1,13 @@
+Ext.define 'SenchaApp.controller.Main',
+  extend: 'Ext.app.Controller'
+
+  config: 
+    control: 
+      fullVersionButton: 
+        tap: 'setFullVersion'
+    refs:
+        fullVersionButton: '#fullVersionButton'
+
+  setFullVersion: ->
+    window.location = "/?mobile=false"
+  
